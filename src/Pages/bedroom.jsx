@@ -1,24 +1,56 @@
-import CategoryLayout from "../components/Layout/CategoryLayout";
+import ProductLayout from "../components/Layout/ProductLayout";
 
 const BedroomPage = () => {
   const headerImage = "/images/bedroom1.png";
   const title = "BED ROOM";
   const images = [
-    { image: "/images/bedroom2.jpeg", title: "Beds" },
-    { image: "/images/bedroom3.jpeg", title: "Wardrobe" },
-    { image: "/images/bedroom4.jpeg", title: "Dressing Table" },
-    { image: "/images/bedroom5.jpeg", title: "Small Chair Or Stool" },
-    { image: "/images/bedroom6.jpeg", title: "Bookshelf" },
-    { image: "/images/bedroom7.jpeg", title: "Storage Box" },
-    { image: "/images/bedroom8.jpeg", title: "Room Divider" },
-    { image: "/images/bedroom9.jpeg", title: "Headboard Multifunction" },
-    { image: "/images/bedroom10.jpeg", title: "Side Table" },
+    { image: "/images/bedroom2.jpeg", title: "Beds", link: "/bedroomcategory" },
+    {
+      image: "/images/bedroom3.jpeg",
+      title: "Wardrobe",
+      link: "/bedroomcategory",
+    },
+    {
+      image: "/images/bedroom4.jpeg",
+      title: "Dressing Table",
+      link: "/bedroomcategory",
+    },
+    {
+      image: "/images/bedroom5.jpeg",
+      title: "Small Chair Or Stool",
+      link: "/bedroomcategory",
+    },
+    {
+      image: "/images/bedroom6.jpeg",
+      title: "Bookshelf",
+      link: "/bedroomcategory",
+    },
+    {
+      image: "/images/bedroom7.jpeg",
+      title: "Storage Box",
+      link: "/bedroomcategory",
+    },
+    {
+      image: "/images/bedroom8.jpeg",
+      title: "Room Divider",
+      link: "/bedroomcategory",
+    },
+    {
+      image: "/images/bedroom9.jpeg",
+      title: "Headboard Multifunction",
+      link: "/bedroomcategory",
+    },
+    {
+      image: "/images/bedroom10.jpeg",
+      title: "Side Table",
+      link: "/bedroomcategory",
+    },
   ];
   return (
-    <CategoryLayout
+    <ProductLayout
       headerImage={headerImage}
       title={title}
-      images={images}></CategoryLayout>
+      images={images}></ProductLayout>
   );
 };
 

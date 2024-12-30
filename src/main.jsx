@@ -7,6 +7,9 @@ import HomePage from "./Pages/home";
 import BedroomPage from "./Pages/bedroom";
 import LivingroomPage from "./Pages/livingroom";
 import KitchendiningPage from "./Pages/kitchendining";
+import LivingroomCategoryPage from "./Pages/livingroomcategory";
+import BedroomCategoryPage from "./Pages/bedroomcategory";
+import KitchendiningCategoryPage from "./Pages/kitchendiningcategory";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +31,18 @@ const router = createBrowserRouter([
   {
     path: "/kitchendining",
     element: <KitchendiningPage />,
+  },
+  {
+    path: "/livingroomcategory",
+    element: <LivingroomCategoryPage />,
+  },
+  {
+    path: "/bedroomcategory",
+    element: <BedroomCategoryPage />,
+  },
+  {
+    path: "/kitchendiningcategory",
+    element: <KitchendiningCategoryPage />,
   },
 ]);
 

@@ -1,5 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../Elements/Button";
+
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleRandomPage = () => {
+    const pages = ["/bedroom", "/livingroom", "/kitchendining"];
+    const randomPage = pages[Math.floor(Math.random() * pages.length)];
+    navigate(randomPage);
+  };
+
   return (
     <div className="container m-auto w-11/12 flex">
       <div className="m-auto w-1/2 flex flex-col items-start gap-4">
@@ -15,7 +25,9 @@ const Hero = () => {
           space unique and yours.
         </p>
         <div className="pt-4">
-          <Button classname="bg-yellow-500 hover:bg-yellow-600 duration-300 shadow-md">
+          <Button
+            classname="bg-yellow-500 hover:bg-yellow-600 duration-300 shadow-md"
+            onClick={handleRandomPage}>
             SHOP NOW
           </Button>
         </div>

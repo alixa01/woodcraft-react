@@ -1,17 +1,17 @@
-import { forwardRef } from "react";
-
-const Input = forwardRef((props, ref) => {
-  const { type, placeholder, name } = props;
+const InputForm = ({ label, type, placeholder, name, value, onChange }) => {
   return (
-    <input
-      type={type}
-      className="text-sm border rounded w-full py-2 px-3 text-slate-700 opacity-50"
-      placeholder={placeholder}
-      name={name}
-      id={name}
-      ref={ref}
-    />
+    <div className="mb-4">
+      <label className="block font-medium text-slate-600 mb-1">{label}</label>
+      <input
+        type={type}
+        placeholder={placeholder}
+        name={name}
+        value={value}
+        onChange={onChange}
+        className="w-full px-3 py-2 border rounded-md"
+      />
+    </div>
   );
-});
+};
 
-export default Input;
+export default InputForm;
